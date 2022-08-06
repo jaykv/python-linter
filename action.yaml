@@ -28,10 +28,6 @@ inputs:
     description: "Isort options"
     required: false
     default: ""
-  django:
-    description: "Confirm if source is a Django project"
-    required: false
-    default: false
 
 runs:
   using: "Docker"
@@ -43,4 +39,3 @@ runs:
     - ${{ inputs.pylint-options }}
     - ${{ inputs.black-options }}
     - ${{ inputs.isort-options }}
-    - ${{ inputs.django }}
