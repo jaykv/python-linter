@@ -30,7 +30,6 @@ Ensure Python code quality. Supports mypy, pylint, black and isort.
 | pylint-options 	| Pylint options                               	| false    	| ""       	|
 | black-options 	| Black options                               	| false    	| ""       	|
 | isort-options 	| Isort options                               	| false    	| ""       	|
-| django        	| Confirm if source is a Django project       	| false    	| false    	|
 
 #### Strictness
 
@@ -98,5 +97,4 @@ sections=FUTURE,STDLIB,DJANGO,DRF,THIRDPARTY,FIRSTPARTY,LOCALFOLDER
      mypy-options: "--ignore-missing-imports --show-error-codes"
      pylint-options: "--rcfile=setup.cfg"
      isort-options: "-w 100"
-     django: true
 ```
